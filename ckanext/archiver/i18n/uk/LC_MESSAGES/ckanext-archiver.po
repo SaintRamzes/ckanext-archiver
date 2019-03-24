@@ -1,18 +1,20 @@
-# Translations template for ckanext-archiver.
+# Ukrainian translations for ckanext-archiver.
 # Copyright (C) 2019 ORGANIZATION
 # This file is distributed under the same license as the ckanext-archiver
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-archiver 2.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-03-25 00:32+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-03-25 00:36+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,105 +25,105 @@ msgstr ""
 #: ckanext/archiver/templates/report/broken_links.html:15
 #: ckanext/archiver/templates/report/broken_links.html:35
 msgid "Broken links"
-msgstr ""
+msgstr "Помилкові посилання"
 
 #: ckanext/archiver/reports.py:242
 msgid "Dataset resource URLs that are found to result in errors when resolved."
-msgstr ""
+msgstr "Посилання на набір данних котрі неможливо завантажити"
 
 #: ckanext/archiver/tasks.py:503 ckanext/archiver/tasks.py:524
 #: ckanext/archiver/tasks.py:736
 #, python-format
 msgid "Content-length %s exceeds maximum allowed value %s"
-msgstr ""
+msgstr "Розмір ресурсу %s перевищує максимально допустиме значення в %s"
 
 #: ckanext/archiver/tasks.py:518
 #, python-format
 msgid "Server content contained an API error message: %s"
-msgstr ""
+msgstr "Сервер повідомив про помилку API: %s"
 
 #: ckanext/archiver/tasks.py:540
 #, python-format
 msgid "Content-length after streaming was %i"
-msgstr ""
+msgstr "Розмір ресурсу після завантаження був %i"
 
 #: ckanext/archiver/tasks.py:612
 msgid "No value for ckanext-archiver.cache_url_root in config"
-msgstr ""
+msgstr "в конфігурації відсутній параметр ckanext-archiver.cache_url_root"
 
 #: ckanext/archiver/tasks.py:700
 #, python-format
 msgid "URL parsing failure: %s"
-msgstr ""
+msgstr "Не вдалося розібрати посилання: %s"
 
 #: ckanext/archiver/tasks.py:705
 #, python-format
 msgid "Invalid url scheme. Please use one of: %s"
-msgstr ""
+msgstr "Недійсна схема посилання. Скористайтеся однією з: %s"
 
 #: ckanext/archiver/tasks.py:709
 msgid "URL parsing failure - did not find a host name"
-msgstr ""
+msgstr "Не вдалося розібрати посилання - не знайдено ім'я хоста"
 
 #: ckanext/archiver/tasks.py:832 ckanext/archiver/tasks.py:981
 #, python-format
 msgid "Connection error: %s"
-msgstr ""
+msgstr "Помилка підключення: %s"
 
 #: ckanext/archiver/tasks.py:834 ckanext/archiver/tasks.py:983
 #, python-format
 msgid "Invalid HTTP response: %s"
-msgstr ""
+msgstr "Недійсна відповідь HTTP: %s"
 
 #: ckanext/archiver/tasks.py:836 ckanext/archiver/tasks.py:985
 #, python-format
 msgid "Connection timed out after %ss"
-msgstr ""
+msgstr "З'єднання закінчилося через %ss"
 
 #: ckanext/archiver/tasks.py:838 ckanext/archiver/tasks.py:987
 msgid "Too many redirects"
-msgstr ""
+msgstr "Забагато переадресацій"
 
 #: ckanext/archiver/tasks.py:840
 #, python-format
 msgid "Error downloading: %s"
-msgstr ""
+msgstr "Помилка завантаження: %s"
 
 #: ckanext/archiver/tasks.py:844
 #, python-format
 msgid "Error with the download: %s"
-msgstr ""
+msgstr "Помилка при завантаженні: %s"
 
 #: ckanext/archiver/tasks.py:976
 msgid "Invalid URL or Redirect Link"
-msgstr ""
+msgstr "Недійсне посилання чи переадресація"
 
 #: ckanext/archiver/tasks.py:979
 msgid "Could not make HEAD request"
-msgstr ""
+msgstr "Запит типу HEAD неможливий"
 
 #: ckanext/archiver/tasks.py:989
 #, python-format
 msgid "Error during request: %s"
-msgstr ""
+msgstr "Помилка під час запиту: %s"
 
 #: ckanext/archiver/tasks.py:991
 #, python-format
 msgid "Error with the request: %s"
-msgstr ""
+msgstr "Помилка запиту: %s"
 
 #: ckanext/archiver/tasks.py:998
 #, python-format
 msgid "Server returned HTTP error status: %s %s"
-msgstr ""
+msgstr "Сервер повернув статус помилки HTTP: %s %s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:38
 msgid "Link is broken"
-msgstr ""
+msgstr "Помилкове посилання"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:43
 msgid "This is a one-off failure"
-msgstr ""
+msgstr "Це одноразова помилка"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:45
 #, python-format
@@ -129,156 +131,161 @@ msgid ""
 "This resource has failed %(failure_count)s times in a row since it first "
 "failed: %(first_failure)s"
 msgstr ""
+"Цей ресурс не вдалося архівувати %(failure_count)s раз поспіль після першої "
+"невдачі: %(first_failure)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:48
 #, python-format
 msgid "This resource was last ok: %(last_success)s"
-msgstr ""
+msgstr "Нещодавно ви змогли архівувати ресурс %(last_success)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:50
 #, python-format
-msgid "We do not have a past record of it working since the first check: %(created)s"
-msgstr ""
+msgid ""
+"We do not have a past record of it working since the first check: "
+"%(created)s"
+msgstr "Ми не маємо минулого запису про його роботу після першої перевірки: "
+"%(created)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:53
 msgid "Link check is not conclusive"
-msgstr ""
+msgstr "Перевірка посилання не остаточна"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:58
 msgid "Link is ok"
-msgstr ""
+msgstr "Посилання нормальне"
 
 #: ckanext/archiver/templates/archiver/is_resource_broken.html:68
 #, python-format
 msgid "Link checked: %(updated)s"
-msgstr ""
+msgstr "Посилання перевірено: %(updated)s"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:39
 msgid "Download cached copy"
-msgstr ""
+msgstr "Завантажити архівну копію"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:41
 msgid "Size"
-msgstr ""
+msgstr "Розмір"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:42
 msgid "Cached on"
-msgstr ""
+msgstr "Архівовано"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:44
 msgid "before it was broken"
-msgstr ""
+msgstr "до того як було зламано"
 
 #: ckanext/archiver/templates/archiver/is_resource_cached.html:47
 msgid "No cached copy available"
-msgstr ""
+msgstr "Немає архівної копії"
 
 #: ckanext/archiver/templates/package/resource_read.html:6
 msgid "Additional Information"
-msgstr ""
+msgstr "Додаткова інформація"
 
 #: ckanext/archiver/templates/package/resource_read.html:10
 msgid "Field"
-msgstr ""
+msgstr "Поле"
 
 #: ckanext/archiver/templates/package/resource_read.html:11
 msgid "Value"
-msgstr ""
+msgstr "Значення"
 
 #: ckanext/archiver/templates/package/resource_read.html:16
 msgid "Last updated"
-msgstr ""
+msgstr "Востаннє оновлено"
 
 #: ckanext/archiver/templates/package/resource_read.html:17
 #: ckanext/archiver/templates/package/resource_read.html:21
 #: ckanext/archiver/templates/package/resource_read.html:25
 msgid "unknown"
-msgstr ""
+msgstr "невідомо"
 
 #: ckanext/archiver/templates/package/resource_read.html:20
 msgid "Created"
-msgstr ""
+msgstr "Створено"
 
 #: ckanext/archiver/templates/package/resource_read.html:24
 msgid "Format"
-msgstr ""
+msgstr "Формат"
 
 #: ckanext/archiver/templates/package/resource_read.html:28
 msgid "License"
-msgstr ""
+msgstr "Ліцензія"
 
 #: ckanext/archiver/templates/report/broken_links.html:3
 #: ckanext/archiver/templates/report/broken_links.html:14
 #: ckanext/archiver/templates/report/broken_links.html:34
 msgid "Broken datasets"
-msgstr ""
+msgstr "Набір данних з неправильним посиланням"
 
 #: ckanext/archiver/templates/report/broken_links.html:13
 #: ckanext/archiver/templates/report/broken_links.html:43
 msgid "Organization"
-msgstr ""
+msgstr "Розпорядник"
 
 #: ckanext/archiver/templates/report/broken_links.html:16
 msgid "% Broken links"
-msgstr ""
+msgstr "% неправильних посилань"
 
 #: ckanext/archiver/templates/report/broken_links.html:40
 msgid "Dataset"
-msgstr ""
+msgstr "Набір данних"
 
 #: ckanext/archiver/templates/report/broken_links.html:41
 msgid "Notes"
-msgstr ""
+msgstr "Нотатки"
 
 #: ckanext/archiver/templates/report/broken_links.html:45
 msgid "Index/position of the resource in the dataset"
-msgstr ""
+msgstr "Позиція ресурсу в наборі данних"
 
 #: ckanext/archiver/templates/report/broken_links.html:45
 msgid "Res"
-msgstr ""
+msgstr "Рес"
 
 #: ckanext/archiver/templates/report/broken_links.html:46
 msgid "URL"
-msgstr ""
+msgstr "Посилання"
 
 #: ckanext/archiver/templates/report/broken_links.html:47
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 #: ckanext/archiver/templates/report/broken_links.html:48
 msgid "Reason"
-msgstr ""
+msgstr "Підстава"
 
 #: ckanext/archiver/templates/report/broken_links.html:49
 msgid "Failed download attempts"
-msgstr ""
+msgstr "Кількість невдалих спроб завантаження"
 
 #: ckanext/archiver/templates/report/broken_links.html:49
 msgid "No. of fails"
-msgstr ""
+msgstr "Кіл. невдач"
 
 #: ckanext/archiver/templates/report/broken_links.html:50
 msgid "First failed attempt"
-msgstr ""
+msgstr "Перша невдала спроба"
 
 #: ckanext/archiver/templates/report/broken_links.html:50
 msgid "First fail"
-msgstr ""
+msgstr "Перша невдача"
 
 #: ckanext/archiver/templates/report/broken_links.html:51
 msgid "Most recent failed attempt"
-msgstr ""
+msgstr "Остання невдала спроба"
 
 #: ckanext/archiver/templates/report/broken_links.html:51
 msgid "Latest fail"
-msgstr ""
+msgstr "Остання невдача"
 
 #: ckanext/archiver/templates/report/broken_links.html:52
 msgid "The last time it was successfully obtained"
-msgstr ""
+msgstr "Дата останньої успішної спроби"
 
 #: ckanext/archiver/templates/report/broken_links.html:52
 msgid "Last success"
-msgstr ""
+msgstr "Останній успіх"
 
